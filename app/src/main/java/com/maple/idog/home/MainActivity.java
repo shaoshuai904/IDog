@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import com.maple.idog.R;
 import com.maple.idog.base.BaseActivity;
-import com.maple.idog.home.fragment.PrivateMessagesPage;
-import com.maple.idog.home.fragment.PublicMessagesPage;
-import com.maple.idog.home.fragment.SettingsPage;
+import com.maple.idog.home.fragment.CenterPage;
+import com.maple.idog.home.fragment.LeftPage;
+import com.maple.idog.home.fragment.RightPage;
 
 
 /**
@@ -23,8 +23,8 @@ public class MainActivity extends BaseActivity {
     private FragmentTabHost mTabHost;
 
     private String[] mTextViewArray;
-    private Class[] fragmentArray = new Class[]{PublicMessagesPage.class, PrivateMessagesPage.class, SettingsPage.class};
-    private int[] mImageViewArray = {R.drawable.tag_public_msg, R.drawable.tag_private_msg, R.drawable.tag_settings};
+    private Class[] fragmentArray = new Class[]{LeftPage.class, CenterPage.class, RightPage.class};
+    private int[] mImageViewArray = {R.drawable.ic_paw_kong, R.drawable.ic_paw_huo, R.drawable.ic_paw_xin};
 
 
     @Override

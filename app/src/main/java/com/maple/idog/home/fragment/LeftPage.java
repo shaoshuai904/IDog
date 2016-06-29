@@ -12,22 +12,19 @@ import com.maple.idog.base.BaseFragment;
 
 /**
  * @author maple
- * @time 16/4/14 下午3:38
+ * @time 16/4/14 下午2:36
  */
-public class SettingsPage extends BaseFragment implements View.OnClickListener {
+public class LeftPage extends BaseFragment implements View.OnClickListener {
 
     BaseActivity mActivity;
 
     @Override
     public View initView(LayoutInflater inflater) {
-        view = inflater.inflate(R.layout.fragment_settings, null);
-
+        view = inflater.inflate(R.layout.fragment_left, null);
 
         mActivity = (BaseActivity) getActivity();
-        mActivity.setTitle(getResources().getStringArray(R.array.tab_fun_array)[2]);
         mActivity.setLeftBtnState(View.INVISIBLE, false);
-        mActivity.setRightBtnState("Lagout", View.VISIBLE, true);
-
+        mActivity.setRightBtnState(View.INVISIBLE, false);
 
         return view;
     }
@@ -35,26 +32,24 @@ public class SettingsPage extends BaseFragment implements View.OnClickListener {
     @Override
     public void initData(Bundle savedInstanceState) {
 
-
     }
-
 
     @Override
     public void initListener() {
-        mActivity.setRightBtnClickListener(this);
 
     }
 
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tv_right_title:
-                // TODO Logout 暂时没有API
-//                toLoginPage();
-                break;
-
-        }
+//        switch (v.getId()) {
+//            case R.id.bt_advanced_message:
+//                startActivity(new Intent(mContext, AdvancedMsgActivity.class));
+//                break;
+//            case R.id.bt_quick_message:
+//                startActivity(new Intent(mContext, QuickMsgActivity.class));
+//                break;
+//        }
     }
 
 
@@ -63,11 +58,4 @@ public class SettingsPage extends BaseFragment implements View.OnClickListener {
 //        Intent intent = new Intent(mContext, LoginActivity.class);
 //        startActivity(intent);
 //    }
-//
-//    private void toSettingPage(int loadPageIndex) {
-//        Intent intent = new Intent(mContext, SettingsActivity.class);
-//        intent.putExtra(SettingsActivity.LOADING_PAGE_INDEX, loadPageIndex);
-//        mContext.startActivity(intent);
-//    }
-
 }
