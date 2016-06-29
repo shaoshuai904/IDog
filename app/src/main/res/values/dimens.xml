@@ -3,4 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="top_bar_height">48dp</dimen>
+    <dimen name="bt_radian">8dp</dimen><!-- 圆角弧度 -->
 </resources>

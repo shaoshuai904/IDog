@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">IDog</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">iDog</string>
+
+    <string-array name="tab_fun_array">
+        <item>家园</item>
+        <item>广场</item>
+        <item>个人</item>
+    </string-array>
+
 </resources>
